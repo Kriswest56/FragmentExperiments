@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kris.fragmentexperiments.DisplayFragment"
+    android:background="@color/colorPrimaryDark">
+
+    <Button
+        android:text="Back"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:id="@+id/backButton"
+        android:layout_width="120sp"
+        android:layout_height="65sp"
+        android:onClick="goBack"
+        android:fontFamily="monospace"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:id="@+id/tipMessage"
+        android:background="@color/main_background"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textAlignment="center"
+        android:textSize="70sp"
+        android:textStyle="normal|bold"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="84dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/display_fragment_title"
+        android:textSize="24sp"
+        android:fontFamily="monospace"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_light"
+        android:textAlignment="center"
+        android:layout_alignBottom="@+id/tipMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="134dp" />
+
+    <TextView
+        android:id="@+id/totalCost"
+        android:layout_height="60dp"
+        android:text=""
+        android:textSize="18sp"
+        android:fontFamily="monospace"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/tipMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp" />
+
+</RelativeLayout>
